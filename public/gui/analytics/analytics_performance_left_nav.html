@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <link href='../../stylesheets/style.css' type='text/css' rel='stylesheet' />
+    <meta charset="utf-8">
+    <title>Feature Results</title>
+  </head>
+
+  <body>
+    
+    <div style="clear: both; width=100%; background-color:#F6F6F6;">
+      <a href="../../index.html" style="color=#0071BC;">&lt; Back</a>
+    </div>
+
+    <div style="float:left; clear:both;">
+      <div class="header_logo">
+        <img src="../../images/logo.jpg" width="200" />
+      </div>
+      <div class="header_description" >
+          <h2 class="results">Feature Results:  Validate left navigation on analytics performance page</h2>
+<br />
+
+
+        <table class="run_stats">
+          <tr>
+            <td>started:</td>
+            <td>duration:</td>
+          </tr>
+          <tr>
+            <td>Monday November 25, 2013 at 17:02:50</td>
+            <td>1m18.849s</td>
+          </tr>
+        </table>  
+          <pre class="description run_stats">Story<br/>As a CM analytic user I should be able to navigate though posts from various networks in a workspace</pre>
+      </div>
+    </div>
+
+    <div class="summary_body">
+        <table class="StatTable">
+         <tr>
+          <th>Summary</th>
+          <th>Executed</th>
+	  <th class="passed"><img src="../../images/table_passed.png" alt="passed" title="passed"> Passed</th>
+          <th class="failed"><img src="../../images/table_failed.png" alt="failed" title="failed"> Failed</th>
+          <th class="skipped"><img src="../../images/table_skipped.png" alt="skipped" title="skipped"> Skipped</th>
+          <th class="undefined"><img src="../../images/table_undefined.png" alt="undefined" title="undefined"> Undefined</th>
+          <th class="pending" ><img src="../../images/table_pending.png" alt="pending" title="pending"> Pending</th>
+          <th>Average Duration</th>
+        </tr>
+
+        <tr class="summary_row_header">
+          <td>Scenarios</td>
+          <td>4</td>
+          <td>4 <span class="percentage">(100.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0m16.108s</td>
+        </tr>
+        <tr class="summary_row_header">
+          <td>Steps</td>
+          <td>8</td>
+          <td>8 <span class="percentage">(100.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0m0.153s</td>
+        </tr>
+
+
+      </table>
+	</div>
+
+    <div class="feature_background">
+	    <div class="scenario_list">
+	      <br />
+	      <h2 class="scenarios">Background: </h2>
+	      <table cellspacing="0" cellpadding="7" border="0" width="100%">
+		<tr>
+		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td>
+		    Given  a clean &quot;AnalyticsCukes&quot; workspace exists
+
+		  </td>
+		</tr>
+		<tr>
+		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td>
+		    Given  I add the &quot;full_access_user&quot; user to the workspace with &quot;contributor&quot; role
+
+		  </td>
+		</tr>
+		<tr>
+		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td>
+		    Given  I add the following accounts to the workspace:
+	<br />
+	<table border="1" class="param_table">
+		<tr>
+				<th>name</th>
+				<th>network</th>
+		</tr>
+			<tr>
+					<td>Publish Blue</td>
+					<td>facebook</td>
+			</tr>
+			<tr>
+					<td>Moes Tavern</td>
+					<td>twitter</td>
+			</tr>
+	</table>
+
+		  </td>
+		</tr>
+		<tr>
+		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td>
+		    Given  I log in as a &quot;full_access_user&quot;
+
+		  </td>
+		</tr>
+		<tr>
+		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td>
+		    Given  I acquire information about my workspace
+
+		  </td>
+		</tr>
+		<tr>
+		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td>
+		    Given  I navigate to the Performance page
+
+		  </td>
+		</tr>
+	      </table>
+	      <br />
+	      <h2 class="scenarios">Scenarios:</h2>
+	      <br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">On the performance home page I see the facebook panel and necessary data</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  &quot;Performance&quot; appears at top of the page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  The &quot;facebook&quot; panel should show necessary fields
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">On the performance home page I see the twitter panel and necessary data</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  &quot;Performance&quot; appears at top of the page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  The &quot;twitter&quot; panel should show necessary fields
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">On the performance home page navigation links to posts should be visible</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  &quot;Performance&quot; appears at top of the page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  The bottom of the page shows links to posts
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Verify Page title to be Performance - [Workspace Name] - Buddy Media</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I get the workspace name
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The title of the page should contain the WS name
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      </div>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="footer">
+      Generated by PrettyFace
+    </div>
+  </body>
+</html>
