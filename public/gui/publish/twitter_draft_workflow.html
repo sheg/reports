@@ -27,8 +27,8 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Monday November 25, 2013 at 17:53:42</td>
-            <td>2m20.138s</td>
+            <td>Tuesday November 26, 2013 at 12:37:24</td>
+            <td>0m40.804s</td>
           </tr>
         </table>  
       </div>
@@ -49,23 +49,23 @@
 
         <tr class="summary_row_header">
           <td>Scenarios</td>
-          <td>5</td>
-          <td>5 <span class="percentage">(100.0%)</span></td>
+          <td>1</td>
+          <td>1 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m25.402s</td>
+          <td>0m14.789s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
-          <td>22</td>
-          <td>22 <span class="percentage">(100.0%)</span></td>
+          <td>4</td>
+          <td>4 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m2.245s</td>
+          <td>0m2.384s</td>
         </tr>
 
 
@@ -136,38 +136,6 @@
 	      <br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">Compose an empty Twitter draft without an account</th>
-		</tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I click on Save button
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  the Save button should be disabled
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  I should see the Draft saved confirmation on the page
-
-		  </td>
-		  </tr>
-	      </table>
-	    
-        <div class="img_container">
-	        <br /><br />
-	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
-	      <tr >
 		  <th colspan="2" class="passed">Compose a Twitter draft to an account without a message</th>
 		</tr>
 		  <tr class="borderSeparator">
@@ -199,150 +167,6 @@
 		  <td class="">
    
 		  Then  I should see the Draft saved confirmation on the page
-
-		  </td>
-		  </tr>
-	      </table>
-	    
-        <div class="img_container">
-	        <br /><br />
-	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
-	      <tr >
-		  <th colspan="2" class="passed">Compose a draft with a random message</th>
-		</tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I select an available account &quot;Moes Tavern&quot;
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I compose the post with a random message
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I click on Save button
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  the Save button should be disabled
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  I should see the Draft saved confirmation on the page
-
-		  </td>
-		  </tr>
-	      </table>
-	    
-        <div class="img_container">
-	        <br /><br />
-	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
-	      <tr >
-		  <th colspan="2" class="passed">Compose a draft with cross site script (XSS)</th>
-		</tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I select an available account &quot;Moes Tavern&quot;
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I compose a post with a specific message &quot;&lt;script&gt;alert(1)&lt;/script&gt;&quot;
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I click on Save button
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  There should not be any JavaScript alert
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  I should see the Draft saved confirmation on the page
-
-		  </td>
-		  </tr>
-	      </table>
-	    
-        <div class="img_container">
-	        <br /><br />
-	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
-	      <tr >
-		  <th colspan="2" class="passed">Create a twitter draft then open it from draft list</th>
-		</tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Given  I create a simple status draft using &quot;Moes Tavern&quot;
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I navigate to my draft list
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  I can open my &quot;Tweet&quot; draft
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I click on Publish button
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  the user should be on the Calendar page
 
 		  </td>
 		  </tr>

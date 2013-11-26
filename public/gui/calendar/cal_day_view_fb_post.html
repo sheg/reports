@@ -27,8 +27,8 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Monday November 25, 2013 at 17:08:58</td>
-            <td>1m15.391s</td>
+            <td>Tuesday November 26, 2013 at 12:32:40</td>
+            <td>0m36.163s</td>
           </tr>
         </table>  
           <pre class="description run_stats">Story<br/>As a content marketing user, I should be able to view my post on calendar day view
@@ -51,23 +51,23 @@ Note - Celery and Publish daemon should be working on Dev, Stage and Prod</pre>
 
         <tr class="summary_row_header">
           <td>Scenarios</td>
-          <td>2</td>
-          <td>2 <span class="percentage">(100.0%)</span></td>
+          <td>1</td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>1 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m31.196s</td>
+          <td>0m23.679s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
-          <td>12</td>
-          <td>12 <span class="percentage">(100.0%)</span></td>
+          <td>6</td>
+          <td>5 <span class="percentage">(83.3%)</span></td>
+          <td>1 <span class="percentage">(16.7%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m3.067s</td>
+          <td>0m3.048s</td>
         </tr>
 
 
@@ -134,7 +134,7 @@ Note - Celery and Publish daemon should be working on Dev, Stage and Prod</pre>
 	      <br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">Facebook post created should be displayed on calendar day view</th>
+		  <th colspan="2" class="failed">Facebook post created should be displayed on calendar day view</th>
 		</tr>
 		  <tr class="borderSeparator">
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
@@ -177,72 +177,41 @@ Note - Celery and Publish daemon should be working on Dev, Stage and Prod</pre>
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
 		  <td class="">
    
 		  When  post message should be part of post descriptions in the day view
-
-		  </td>
-		  </tr>
-	      </table>
-	    
-        <div class="img_container">
-	        <br /><br />
-	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
-	      <tr >
-		  <th colspan="2" class="passed">Create a facebook post to multiple targets should be displayed on calendar day view</th>
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>expected [&quot;HT Free LIving!&quot;, &quot;quia et cupiditate&quot;, &quot;blanditiis in amet&quot;, &quot;saepe ut et&quot;, &quot;rerum velit commodi&quot;, &quot;corrupti alias esse&quot;] to include &quot;et ullam odio&quot; (RSpec::Expectations::ExpectationNotMetError)</pre></strong>
+			</td>
 		</tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I create a new facebook post via api to multiple targets
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  the facebook post should successfully be created
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  get the post message from the post response object
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  get all the post in the day view
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  get all the post descriptions in the day view
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  post message should be part of post descriptions in the day view
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./features/step_definitions/calendar/web_cal_pub_day_view.rb
+</strong><code><span class="linenum">26</span>
+<span class="linenum">27</span><span class="constant">When</span><span class="punct">(/</span><span class="regex">^post message should be part of post descriptions in the day view$</span><span class="punct">/)</span> <span class="keyword">do</span>
+<span class="offending"><span class="linenum">28</span>  <span class="attribute">@all_posts_descriptions</span><span class="punct">.</span><span class="ident">should</span> <span class="ident">include</span> <span class="attribute">@post_message</span></span>
+<span class="linenum">29</span>  <span class="attribute">@index</span> <span class="punct">=</span> <span class="attribute">@all_posts_descriptions</span><span class="punct">.</span><span class="ident">rindex</span><span class="punct">(</span><span class="attribute">@post_message</span><span class="punct">)</span>
+<span class="linenum">30</span><span class="keyword">end</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./features/step_definitions/calendar/web_cal_pub_day_view.rb:28:in `/^post message should be part of post descriptions in the day view$/&#39;
+features/gui/calendar/cal_day_view_fb_post.feature:22:in `And post message should be part of post descriptions in the day view&#39;</pre>
+			</td>
+		</tr>
+	</table>
 
 		  </td>
 		  </tr>
 	      </table>
 	    
         <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_0'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_0' style='display: none' src='../../images/error-2013-11-26 12:33:10 -0500.png'/>
 	        <br /><br />
 	      </div>
       </div>

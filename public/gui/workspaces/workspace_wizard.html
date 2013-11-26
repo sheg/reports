@@ -17,7 +17,7 @@
         <img src="../../images/logo.jpg" width="200" />
       </div>
       <div class="header_description" >
-          <h2 class="results">Feature Results:  Week view for the calendar should be displayed</h2>
+          <h2 class="results">Feature Results:  Workspace Creation Wizard</h2>
 <br />
 
 
@@ -27,11 +27,12 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Tuesday November 26, 2013 at 12:34:11</td>
-            <td>0m14.279s</td>
+            <td>Tuesday November 26, 2013 at 12:39:04</td>
+            <td>0m46.893s</td>
           </tr>
         </table>  
-          <pre class="description run_stats">Story<br/>As a content marketing user, I should be able to view my calendar in week view</pre>
+          <pre class="description run_stats">Story<br/>As a user
+I should be able to create a new workspace and able to see my workspace in workspace landing page</pre>
       </div>
     </div>
 
@@ -50,23 +51,23 @@
 
         <tr class="summary_row_header">
           <td>Scenarios</td>
-          <td>1</td>
-          <td>1 <span class="percentage">(100.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m6.046s</td>
-        </tr>
-        <tr class="summary_row_header">
-          <td>Steps</td>
           <td>2</td>
           <td>2 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m0.421s</td>
+          <td>0m23.446s</td>
+        </tr>
+        <tr class="summary_row_header">
+          <td>Steps</td>
+          <td>7</td>
+          <td>7 <span class="percentage">(100.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0m4.171s</td>
         </tr>
 
 
@@ -75,50 +76,20 @@
 
     <div class="feature_background">
 	    <div class="scenario_list">
-	      <br />
-	      <h2 class="scenarios">Background: </h2>
 	      <table cellspacing="0" cellpadding="7" border="0" width="100%">
-		<tr>
-		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td>
-		    Given  a clean &quot;CalendarBotWeekView&quot; workspace exists
-
-		  </td>
-		</tr>
-		<tr>
-		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td>
-		    Given  I add the &quot;full_access_user&quot; user to the workspace with &quot;contributor&quot; role
-
-		  </td>
-		</tr>
-		<tr>
-		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td>
-		    Given  I log in as a &quot;default&quot;
-
-		  </td>
-		</tr>
-		<tr>
-		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td>
-		    Given  I am on the calendar page using its designated workspace
-
-		  </td>
-		</tr>
 	      </table>
 	      <br />
 	      <h2 class="scenarios">Scenarios:</h2>
 	      <br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">User should paginate to next week</th>
+		  <th colspan="2" class="passed">should be able to create a new workspace with no social accounts or users</th>
 		</tr>
 		  <tr class="borderSeparator">
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  Then  I am able to paginate to next week
+		  Given  I am on the workspaces index page
 
 		  </td>
 		  </tr>
@@ -126,7 +97,55 @@
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  Then  verify we are not in current week view
+		  When  I create a new workspace with no social accounts or users
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should be able to access the workspace
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">user should be able to add multiple users and social accounts to a new workspace</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I am on the workspaces index page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I create a new workspace with &quot;3&quot; social accounts and &quot;3&quot; users to the new workspace
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I search for that workspace in workspace index page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see the user count as &quot;4&quot; and social account count as &quot;3&quot; in workspace index page
 
 		  </td>
 		  </tr>

@@ -17,7 +17,7 @@
         <img src="../../images/logo.jpg" width="200" />
       </div>
       <div class="header_description" >
-          <h2 class="results">Feature Results:  Week view for the calendar should be displayed</h2>
+          <h2 class="results">Feature Results:  workspace_settings - as a user I should be able to update my workspace settings via the UI</h2>
 <br />
 
 
@@ -27,11 +27,10 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Tuesday November 26, 2013 at 12:34:11</td>
-            <td>0m14.279s</td>
+            <td>Tuesday November 26, 2013 at 12:38:37</td>
+            <td>0m26.262s</td>
           </tr>
         </table>  
-          <pre class="description run_stats">Story<br/>As a content marketing user, I should be able to view my calendar in week view</pre>
       </div>
     </div>
 
@@ -56,7 +55,7 @@
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m6.046s</td>
+          <td>0m13.961s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
@@ -66,7 +65,7 @@
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m0.421s</td>
+          <td>0m4.382s</td>
         </tr>
 
 
@@ -81,28 +80,35 @@
 		<tr>
 		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td>
-		    Given  a clean &quot;CalendarBotWeekView&quot; workspace exists
+		    Given  a clean &quot;workspace_api&quot; workspace exists
 
 		  </td>
 		</tr>
 		<tr>
 		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td>
-		    Given  I add the &quot;full_access_user&quot; user to the workspace with &quot;contributor&quot; role
+		    Given  I add the &quot;full_access_user&quot; user to the workspace with &quot;Admin&quot; role
 
 		  </td>
 		</tr>
 		<tr>
 		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td>
-		    Given  I log in as a &quot;default&quot;
+		    Given  I log in as a &quot;full_access_user&quot;
 
 		  </td>
 		</tr>
 		<tr>
 		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td>
-		    Given  I am on the calendar page using its designated workspace
+		    Given  I acquire information about my workspace
+
+		  </td>
+		</tr>
+		<tr>
+		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td>
+		    Given  I am on the basic information section of the workspace settings page
 
 		  </td>
 		</tr>
@@ -112,13 +118,13 @@
 	      <br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">User should paginate to next week</th>
+		  <th colspan="2" class="passed">attempt to upload invalid file types using image uploader</th>
 		</tr>
 		  <tr class="borderSeparator">
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  Then  I am able to paginate to next week
+		  When  I attempt to upload the file &quot;virus_image.png&quot; to Workspace Logo
 
 		  </td>
 		  </tr>
@@ -126,7 +132,7 @@
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  Then  verify we are not in current week view
+		  Then  the the following flash message should be present &quot;There was a virus detected in your file&quot;
 
 		  </td>
 		  </tr>
