@@ -21,8 +21,8 @@
             <td>duration: </td>
           </tr>
           <tr>
-            <td>Tue November 26, 2013 at 12:31:52</td>            
-            <td>7m58.059s</td>
+            <td>Mon December 9, 2013 at 14:27:51</td>            
+            <td>119m22.936s</td>
           </tr>
         </table> 
       </div>
@@ -41,23 +41,23 @@
         </tr>
         <tr class="summary_row_header">
 	  <td>Scenarios</td>
-          <td>20</td>
-          <td>17 <span class="percentage">(85.0%)</span></td>
-          <td>3 <span class="percentage">(15.0%)</span></td>
+          <td>198</td>
+          <td>175 <span class="percentage">(88.4%)</span></td>
+          <td>19 <span class="percentage">(9.6%)</span></td>
+          <td>4 <span class="percentage">(2.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m14.038s</td>
+          <td>0m32.927s</td>
         </tr>
         <tr class="summary_row_header">
           <td >Steps</td>
-          <td>168</td>
-          <td>158 <span class="percentage">(94.0%)</span></td>
-          <td>3 <span class="percentage">(1.8%)</span></td>
-          <td>7 <span class="percentage">(4.2%)</span></td>
+          <td>1752</td>
+          <td>1674 <span class="percentage">(95.5%)</span></td>
+          <td>19 <span class="percentage">(1.1%)</span></td>
+          <td>59 <span class="percentage">(3.4%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m2.411s</td>
+          <td>0m8.046s</td>
         </tr>
       </table>
     </div>
@@ -75,21 +75,117 @@
         </tr>
         <tr>
           <td><img src="images/failed.png" width="30"/></td>
+          <td>Importer Facebook Scenarios </td>
+          <td>Create a facebook post and make sure the post is in the performance posts table</td>
+          <td style="color: gray;">features/gui/analytics/importer_facebook.feature:18</td>
+        </tr>
+        <tr>
+          <td><img src="images/failed.png" width="30"/></td>
           <td>Facebook Post should be displayed on calendar day view </td>
-          <td>Facebook post created should be displayed on calendar day view</td>
-          <td style="color: gray;">features/gui/calendar/cal_day_view_fb_post.feature:16</td>
+          <td>Create a facebook post to multiple targets should be displayed on calendar day view</td>
+          <td style="color: gray;">features/gui/calendar/cal_day_view_fb_post.feature:24</td>
         </tr>
         <tr>
           <td><img src="images/failed.png" width="30"/></td>
-          <td>Twitter Post should be displayed on calendar day view </td>
-          <td>Twitter post created should be displayed on calendar day view</td>
-          <td style="color: gray;">features/gui/calendar/cal_day_view_twitter_post.feature:16</td>
+          <td>Calendar Inspector should display post items with labels </td>
+          <td>Calendar Inspector Label should match post message with single label</td>
+          <td style="color: gray;">features/gui/calendar/cal_inspector_fb_post_labels.feature:14</td>
         </tr>
         <tr>
           <td><img src="images/failed.png" width="30"/></td>
-          <td>Facebook Publish workflow validation </td>
-          <td>Create a simple facebook status post</td>
-          <td style="color: gray;">features/gui/publish/fb_publish_workflow.feature:18</td>
+          <td>Login </td>
+          <td>should be able to login as a different user other than the actual remembered user</td>
+          <td style="color: gray;">features/gui/core/login.feature:62</td>
+        </tr>
+        <tr>
+          <td><img src="images/failed.png" width="30"/></td>
+          <td>Facebook Draft workflow validation </td>
+          <td>Compose an empty draft without an account</td>
+          <td style="color: gray;">features/gui/publish/fb_draft_workflow.feature:16</td>
+        </tr>
+        <tr>
+          <td><img src="images/failed.png" width="30"/></td>
+          <td>Facebook Draft workflow validation </td>
+          <td>Compose a draft to an account without a message</td>
+          <td style="color: gray;">features/gui/publish/fb_draft_workflow.feature:22</td>
+        </tr>
+        <tr>
+          <td><img src="images/failed.png" width="30"/></td>
+          <td>Facebook Draft workflow validation </td>
+          <td>Compose a draft with a random message</td>
+          <td style="color: gray;">features/gui/publish/fb_draft_workflow.feature:28</td>
+        </tr>
+        <tr>
+          <td><img src="images/failed.png" width="30"/></td>
+          <td>Facebook Draft workflow validation </td>
+          <td>Compose a draft with cross site script (XSS)</td>
+          <td style="color: gray;">features/gui/publish/fb_draft_workflow.feature:35</td>
+        </tr>
+        <tr>
+          <td><img src="images/failed.png" width="30"/></td>
+          <td>Facebook Draft workflow validation </td>
+          <td>Create a simple status post draft and then publish it</td>
+          <td style="color: gray;">features/gui/publish/fb_draft_workflow.feature:42</td>
+        </tr>
+        <tr>
+          <td><img src="images/failed.png" width="30"/></td>
+          <td>Facebook permalink page validation </td>
+          <td>User should be allowed to edit a scheduled facebook post</td>
+          <td style="color: gray;">features/gui/publish/fb_permalink.feature:24</td>
+        </tr>
+        <tr>
+          <td><img src="images/failed.png" width="30"/></td>
+          <td>Twitter Draft workflow validation </td>
+          <td>Compose an empty Twitter draft without an account</td>
+          <td style="color: gray;">features/gui/publish/twitter_draft_workflow.feature:16</td>
+        </tr>
+        <tr>
+          <td><img src="images/failed.png" width="30"/></td>
+          <td>Twitter Draft workflow validation </td>
+          <td>Compose a Twitter draft to an account without a message</td>
+          <td style="color: gray;">features/gui/publish/twitter_draft_workflow.feature:22</td>
+        </tr>
+        <tr>
+          <td><img src="images/failed.png" width="30"/></td>
+          <td>Twitter Draft workflow validation </td>
+          <td>Compose a draft with a random message</td>
+          <td style="color: gray;">features/gui/publish/twitter_draft_workflow.feature:28</td>
+        </tr>
+        <tr>
+          <td><img src="images/failed.png" width="30"/></td>
+          <td>Twitter Draft workflow validation </td>
+          <td>Compose a draft with cross site script (XSS)</td>
+          <td style="color: gray;">features/gui/publish/twitter_draft_workflow.feature:35</td>
+        </tr>
+        <tr>
+          <td><img src="images/failed.png" width="30"/></td>
+          <td>Twitter Draft workflow validation </td>
+          <td>Create a twitter draft then open it from draft list</td>
+          <td style="color: gray;">features/gui/publish/twitter_draft_workflow.feature:42</td>
+        </tr>
+        <tr>
+          <td><img src="images/failed.png" width="30"/></td>
+          <td>workspace_settings - as a user I should be able to update my workspace settings via the UI </td>
+          <td>attempt to upload invalid file types using image uploader</td>
+          <td style="color: gray;">features/gui/workspaces/uploader.feature:12</td>
+        </tr>
+        <tr>
+          <td><img src="images/failed.png" width="30"/></td>
+          <td>workspace_settings - as a user I should be able to update my workspace settings via the UI </td>
+          <td>update workspace name</td>
+          <td style="color: gray;">features/gui/workspaces/workspace_settings.feature:11</td>
+        </tr>
+        <tr>
+          <td><img src="images/failed.png" width="30"/></td>
+          <td>Workspace Creation Wizard </td>
+          <td>user should get correct information in workspace summary page when no social accounts or users are added to the workspace</td>
+          <td style="color: gray;">features/gui/workspaces/workspace_wizard.feature:58</td>
+        </tr>
+        <tr>
+          <td><img src="images/failed.png" width="30"/></td>
+          <td>Workspace Creation Wizard </td>
+          <td>user should get correct information in workspace summary page when multiple users and social accounts are added to a workspace</td>
+          <td style="color: gray;">features/gui/workspaces/workspace_wizard.feature:68</td>
         </tr>
       </table>
 
@@ -111,13 +207,39 @@
           </tr>
           <tr>
             <td class="feature_title">
+              <a href="gui/analytics/analytics_performance_all_posts.html">Validate left navigation on analytics performance page</a>
+            </td>
+            <td>
+              gui/analytics/analytics_performance_all_posts.html
+            </td>
+            <td>
+              4
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              4m15.157s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
               <a href="gui/analytics/analytics_performance_facebook_posts.html">Validate left navigation on analytics performance page</a>
             </td>
             <td>
               gui/analytics/analytics_performance_facebook_posts.html
             </td>
             <td>
-              1
+              17
             </td>
             <td>
               0
@@ -132,7 +254,59 @@
               0
             </td>
             <td>
-              0m23.220s
+              11m5.140s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
+              <a href="gui/analytics/analytics_performance_left_nav.html">Validate left navigation on analytics performance page</a>
+            </td>
+            <td>
+              gui/analytics/analytics_performance_left_nav.html
+            </td>
+            <td>
+              4
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              1m47.079s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
+              <a href="gui/analytics/analytics_performance_special_workspaces.html">Test workspaces with special setups</a>
+            </td>
+            <td>
+              gui/analytics/analytics_performance_special_workspaces.html
+            </td>
+            <td>
+              2
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0m53.470s
             </td>
           </tr>
           <tr>
@@ -143,6 +317,84 @@
               gui/analytics/analytics_performance_twitter_posts.html
             </td>
             <td>
+              6
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              3m41.020s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
+              <a href="gui/analytics/importer_facebook.html">Importer Facebook Scenarios</a>
+            </td>
+            <td>
+              gui/analytics/importer_facebook.html
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              1
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              5m40.001s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
+              <a href="gui/analytics/importer_twitter.html">Importer Twitter Scenarios</a>
+            </td>
+            <td>
+              gui/analytics/importer_twitter.html
+            </td>
+            <td>
+              2
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              1m41.239s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
+              <a href="gui/calendar/cal_day_view.html">Post should be displayed on calendar day view</a>
+            </td>
+            <td>
+              gui/calendar/cal_day_view.html
+            </td>
+            <td>
               1
             </td>
             <td>
@@ -158,7 +410,7 @@
               0
             </td>
             <td>
-              0m24.005s
+              0m50.091s
             </td>
           </tr>
           <tr>
@@ -169,7 +421,7 @@
               gui/calendar/cal_day_view_fb_post.html
             </td>
             <td>
-              0
+              1
             </td>
             <td>
               1
@@ -184,7 +436,7 @@
               0
             </td>
             <td>
-              0m36.163s
+              1m29.264s
             </td>
           </tr>
           <tr>
@@ -195,6 +447,84 @@
               gui/calendar/cal_day_view_twitter_post.html
             </td>
             <td>
+              2
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              1m26.399s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
+              <a href="gui/calendar/cal_fb_post_id.html">Post should be displayed on calendar day view</a>
+            </td>
+            <td>
+              gui/calendar/cal_fb_post_id.html
+            </td>
+            <td>
+              3
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              2m14.016s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
+              <a href="gui/calendar/cal_inspector_fb_post.html">Calendar Inspector should display post items</a>
+            </td>
+            <td>
+              gui/calendar/cal_inspector_fb_post.html
+            </td>
+            <td>
+              2
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              1m31.219s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
+              <a href="gui/calendar/cal_inspector_fb_post_labels.html">Calendar Inspector should display post items with labels</a>
+            </td>
+            <td>
+              gui/calendar/cal_inspector_fb_post_labels.html
+            </td>
+            <td>
               0
             </td>
             <td>
@@ -210,7 +540,59 @@
               0
             </td>
             <td>
-              0m27.580s
+              0m47.298s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
+              <a href="gui/calendar/cal_inspector_twitter_post.html">Calendar Inspector should display post items</a>
+            </td>
+            <td>
+              gui/calendar/cal_inspector_twitter_post.html
+            </td>
+            <td>
+              2
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              1m22.582s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
+              <a href="gui/calendar/cal_twitter_post_id.html">Post should be displayed on calendar day view</a>
+            </td>
+            <td>
+              gui/calendar/cal_twitter_post_id.html
+            </td>
+            <td>
+              3
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              1m53.667s
             </td>
           </tr>
           <tr>
@@ -221,7 +603,7 @@
               gui/calendar/day_view.html
             </td>
             <td>
-              1
+              7
             </td>
             <td>
               0
@@ -236,7 +618,7 @@
               0
             </td>
             <td>
-              0m13.997s
+              2m46.124s
             </td>
           </tr>
           <tr>
@@ -247,7 +629,7 @@
               gui/calendar/month_view.html
             </td>
             <td>
-              1
+              7
             </td>
             <td>
               0
@@ -262,7 +644,7 @@
               0
             </td>
             <td>
-              0m13.768s
+              2m35.458s
             </td>
           </tr>
           <tr>
@@ -273,7 +655,7 @@
               gui/calendar/week_view.html
             </td>
             <td>
-              1
+              7
             </td>
             <td>
               0
@@ -288,7 +670,7 @@
               0
             </td>
             <td>
-              0m14.279s
+              2m28.516s
             </td>
           </tr>
           <tr>
@@ -299,6 +681,9 @@
               gui/core/login.html
             </td>
             <td>
+              11
+            </td>
+            <td>
               1
             </td>
             <td>
@@ -311,10 +696,7 @@
               0
             </td>
             <td>
-              0
-            </td>
-            <td>
-              0m9.515s
+              2m22.380s
             </td>
           </tr>
           <tr>
@@ -325,7 +707,7 @@
               gui/publish/fb_compose_ui.html
             </td>
             <td>
-              2
+              14
             </td>
             <td>
               0
@@ -340,7 +722,7 @@
               0
             </td>
             <td>
-              0m46.897s
+              6m8.888s
             </td>
           </tr>
           <tr>
@@ -351,7 +733,10 @@
               gui/publish/fb_draft_workflow.html
             </td>
             <td>
-              1
+              0
+            </td>
+            <td>
+              5
             </td>
             <td>
               0
@@ -363,10 +748,7 @@
               0
             </td>
             <td>
-              0
-            </td>
-            <td>
-              0m26.039s
+              4m13.104s
             </td>
           </tr>
           <tr>
@@ -377,6 +759,9 @@
               gui/publish/fb_permalink.html
             </td>
             <td>
+              2
+            </td>
+            <td>
               1
             </td>
             <td>
@@ -389,10 +774,7 @@
               0
             </td>
             <td>
-              0
-            </td>
-            <td>
-              0m40.331s
+              2m26.914s
             </td>
           </tr>
           <tr>
@@ -403,10 +785,7 @@
               gui/publish/fb_publish_workflow.html
             </td>
             <td>
-              0
-            </td>
-            <td>
-              1
+              15
             </td>
             <td>
               0
@@ -418,7 +797,10 @@
               0
             </td>
             <td>
-              0m9.553s
+              0
+            </td>
+            <td>
+              14m57.326s
             </td>
           </tr>
           <tr>
@@ -429,7 +811,7 @@
               gui/publish/geo_feed_targeting.html
             </td>
             <td>
-              1
+              4
             </td>
             <td>
               0
@@ -444,7 +826,7 @@
               0
             </td>
             <td>
-              0m18.166s
+              1m34.687s
             </td>
           </tr>
           <tr>
@@ -455,7 +837,7 @@
               gui/publish/twitter_compose_ui.html
             </td>
             <td>
-              1
+              12
             </td>
             <td>
               0
@@ -470,7 +852,7 @@
               0
             </td>
             <td>
-              0m28.258s
+              8m14.396s
             </td>
           </tr>
           <tr>
@@ -481,7 +863,10 @@
               gui/publish/twitter_draft_workflow.html
             </td>
             <td>
-              1
+              0
+            </td>
+            <td>
+              5
             </td>
             <td>
               0
@@ -493,70 +878,15 @@
               0
             </td>
             <td>
-              0
-            </td>
-            <td>
-              0m40.804s
+              4m20.515s
             </td>
           </tr>
           <tr>
             <td class="feature_title">
-              <a href="gui/publish/twitter_publish_workflow.html">Twitter Publish workflow validation</a>
+              <a href="gui/publish/twitter_permalink.html">Twitter permalink page validation</a>
             </td>
             <td>
-              gui/publish/twitter_publish_workflow.html
-            </td>
-            <td>
-              1
-            </td>
-            <td>
-              0
-            </td>
-            <td>
-              0
-            </td>
-            <td>
-              0
-            </td>
-            <td>
-              0
-            </td>
-            <td>
-              0m32.324s
-            </td>
-          </tr>
-          <tr>
-            <td class="feature_title">
-              <a href="gui/workspaces/uploader.html">workspace_settings - as a user I should be able to update my workspace settings via the UI</a>
-            </td>
-            <td>
-              gui/workspaces/uploader.html
-            </td>
-            <td>
-              1
-            </td>
-            <td>
-              0
-            </td>
-            <td>
-              0
-            </td>
-            <td>
-              0
-            </td>
-            <td>
-              0
-            </td>
-            <td>
-              0m26.262s
-            </td>
-          </tr>
-          <tr>
-            <td class="feature_title">
-              <a href="gui/workspaces/workspace_wizard.html">Workspace Creation Wizard</a>
-            </td>
-            <td>
-              gui/workspaces/workspace_wizard.html
+              gui/publish/twitter_permalink.html
             </td>
             <td>
               2
@@ -574,7 +904,215 @@
               0
             </td>
             <td>
-              0m46.893s
+              1m25.595s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
+              <a href="gui/publish/twitter_publish_workflow.html">Twitter Publish workflow validation</a>
+            </td>
+            <td>
+              gui/publish/twitter_publish_workflow.html
+            </td>
+            <td>
+              14
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              12m54.672s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
+              <a href="gui/publish/user_permissions.html">Publish user permissions validation</a>
+            </td>
+            <td>
+              gui/publish/user_permissions.html
+            </td>
+            <td>
+              2
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              1m28.934s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
+              <a href="gui/workspaces/uploader.html">workspace_settings - as a user I should be able to update my workspace settings via the UI</a>
+            </td>
+            <td>
+              gui/workspaces/uploader.html
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              1
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              4
+            </td>
+            <td>
+              0m48.782s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
+              <a href="gui/workspaces/workspace_home.html">Workspaces Home page</a>
+            </td>
+            <td>
+              gui/workspaces/workspace_home.html
+            </td>
+            <td>
+              1
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0m10.470s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
+              <a href="gui/workspaces/workspace_settings.html">workspace_settings - as a user I should be able to update my workspace settings via the UI</a>
+            </td>
+            <td>
+              gui/workspaces/workspace_settings.html
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              1
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0m23.405s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
+              <a href="gui/workspaces/workspace_social_assets.html">CRUD and settings for Social Assets</a>
+            </td>
+            <td>
+              gui/workspaces/workspace_social_assets.html
+            </td>
+            <td>
+              1
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0m23.531s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
+              <a href="gui/workspaces/workspace_users.html">Add workspace members page validation</a>
+            </td>
+            <td>
+              gui/workspaces/workspace_users.html
+            </td>
+            <td>
+              12
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              2m38.633s
+            </td>
+          </tr>
+          <tr>
+            <td class="feature_title">
+              <a href="gui/workspaces/workspace_wizard.html">Workspace Creation Wizard</a>
+            </td>
+            <td>
+              gui/workspaces/workspace_wizard.html
+            </td>
+            <td>
+              15
+            </td>
+            <td>
+              2
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              6m22.949s
             </td>
           </tr>
         </table>

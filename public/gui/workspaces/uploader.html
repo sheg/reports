@@ -27,8 +27,8 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Tuesday November 26, 2013 at 12:38:37</td>
-            <td>0m26.262s</td>
+            <td>Monday December 9, 2013 at 16:16:26</td>
+            <td>0m48.782s</td>
           </tr>
         </table>  
       </div>
@@ -49,23 +49,23 @@
 
         <tr class="summary_row_header">
           <td>Scenarios</td>
-          <td>1</td>
-          <td>1 <span class="percentage">(100.0%)</span></td>
+          <td>5</td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>1 <span class="percentage">(20.0%)</span></td>
+          <td>4 <span class="percentage">(80.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m13.961s</td>
+          <td>0m5.356s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
-          <td>2</td>
-          <td>2 <span class="percentage">(100.0%)</span></td>
+          <td>13</td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>13 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m4.382s</td>
+          <td>0m12.246s</td>
         </tr>
 
 
@@ -106,9 +106,35 @@
 		  </td>
 		</tr>
 		<tr>
-		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td><img src="../../images/failed.png" alt="failed" title="failed"></td>
 		  <td>
 		    Given  I am on the basic information section of the workspace settings page
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>no such element
+  (Session info: chrome=31.0.1650.63)
+  (Driver info: chromedriver=2.2,platform=Mac OS X 10.8.5 x86_64) (Selenium::WebDriver::Error::NoSuchElementError)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./lib/modules/workspace_settings_nav.rb
+</strong><code><span class="linenum">11</span>  <span class="comment">#check out the &quot;sending message section&quot; of the cheezy book, page 96. Cool stuffs.</span>
+<span class="linenum">12</span>  <span class="keyword">def </span><span class="method">go_to_settings</span><span class="punct">(</span><span class="ident">settings_page</span><span class="punct">)</span>
+<span class="offending"><span class="linenum">13</span>    <span class="constant">self</span><span class="punct">.</span><span class="ident">send</span> <span class="ident">settings_page</span></span>
+<span class="linenum">14</span>    <span class="ident">wait_for_ajax</span>
+<span class="linenum">15</span>  <span class="keyword">end</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./lib/modules/workspace_settings_nav.rb:13:in `go_to_settings&#39;
+./features/step_definitions/gui/workspaces/workspace_settings.rb:7:in `/^I am on the basic information section of the workspace settings page$/&#39;
+features/gui/workspaces/uploader.feature:9:in `And I am on the basic information section of the workspace settings page&#39;</pre>
+			</td>
+		</tr>
+	</table>
 
 		  </td>
 		</tr>
@@ -118,21 +144,141 @@
 	      <br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">attempt to upload invalid file types using image uploader</th>
+		  <th colspan="2" class="failed">attempt to upload invalid file types using image uploader</th>
 		</tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
    
 		  When  I attempt to upload the file &quot;virus_image.png&quot; to Workspace Logo
 
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
    
 		  Then  the the following flash message should be present &quot;There was a virus detected in your file&quot;
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="skipped">upload a new logo that is too large</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  When  I attempt to upload the file &quot;large.jpg&quot; to Workspace Logo
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  the the following flash message should be present &quot;File size exceeds allowed limit&quot;
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="skipped">upload multiple logo file types to workspace settings</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  When  I attempt to upload the file &quot;small.jpg&quot; to Workspace Logo
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  the the following flash message should be present &quot;Image Successfully Uploaded&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  the new logo is present in the workspace basic information page
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="skipped">upload multiple logo file types to workspace settings</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  When  I attempt to upload the file &quot;before.png&quot; to Workspace Logo
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  the the following flash message should be present &quot;Image Successfully Uploaded&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  the new logo is present in the workspace basic information page
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="skipped">upload multiple logo file types to workspace settings</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  When  I attempt to upload the file &quot;salesforce.gif&quot; to Workspace Logo
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  the the following flash message should be present &quot;Image Successfully Uploaded&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  the new logo is present in the workspace basic information page
 
 		  </td>
 		  </tr>

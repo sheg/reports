@@ -27,8 +27,8 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Tuesday November 26, 2013 at 12:36:28</td>
-            <td>0m9.553s</td>
+            <td>Monday December 9, 2013 at 15:31:30</td>
+            <td>14m57.326s</td>
           </tr>
         </table>  
       </div>
@@ -49,23 +49,23 @@
 
         <tr class="summary_row_header">
           <td>Scenarios</td>
-          <td>1</td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>1 <span class="percentage">(100.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>15</td>
+          <td>15 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m0.008s</td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0m58.646s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
-          <td>4</td>
+          <td>104</td>
+          <td>104 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>4 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m0.001s</td>
+          <td>0m5.221s</td>
         </tr>
 
 
@@ -92,7 +92,7 @@
 		  </td>
 		</tr>
 		<tr>
-		  <td><img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td>
 		    Given  I add the following accounts to the workspace:
 	<br />
@@ -110,51 +110,25 @@
 					<td>facebook</td>
 			</tr>
 	</table>
-	<table>
-		<tr class="error">
-			<td class="message">
-				<strong><pre>Could not locate the facebook account named Publish Green (RuntimeError)</pre></strong>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<pre class="ruby"><strong>./lib/api/workspaces/SocialAssets.rb
-</strong><code><span class="linenum">64</span>    <span class="ident">get_social_assets_by_network</span><span class="punct">(</span><span class="ident">network</span><span class="punct">)</span>
-<span class="linenum">65</span>    <span class="ident">all_social_account_info</span> <span class="punct">=</span> <span class="ident">social_asset_response_data</span><span class="punct">.</span><span class="ident">find</span> <span class="punct">{</span> <span class="punct">|</span><span class="ident">account</span><span class="punct">|</span> <span class="ident">account</span><span class="punct">['</span><span class="string">name</span><span class="punct">']</span> <span class="punct">==</span> <span class="ident">name</span> <span class="punct">}</span>
-<span class="offending"><span class="linenum">66</span>    <span class="ident">fail</span> <span class="punct">&quot;</span><span class="string">Could not locate the <span class="expr">#{network}</span> account named <span class="expr">#{name}</span></span><span class="punct">&quot;</span> <span class="keyword">unless</span> <span class="ident">all_social_account_info</span></span>
-<span class="linenum">67</span>    <span class="punct">{</span>
-<span class="linenum">68</span>      <span class="punct">'</span><span class="string">name</span><span class="punct">'</span> <span class="punct">=&gt;</span> <span class="ident">all_social_account_info</span><span class="punct">['</span><span class="string">name</span><span class="punct">'],</span></code></pre>
-			</td>
-		</tr>
-		<tr >
-			<td class="detail">
-					<pre>./lib/api/workspaces/SocialAssets.rb:66:in `generate_social_asset_data_by_name&#39;
-./features/step_definitions/dynamic_setup_steps.rb:49:in `block (2 levels) in &lt;top (required)&gt;&#39;
-./features/step_definitions/dynamic_setup_steps.rb:48:in `each&#39;
-./features/step_definitions/dynamic_setup_steps.rb:48:in `/^I add the following accounts to the workspace:$/&#39;
-features/gui/publish/fb_publish_workflow.feature:7:in `And I add the following accounts to the workspace:&#39;</pre>
-			</td>
-		</tr>
-	</table>
 
 		  </td>
 		</tr>
 		<tr>
-		  <td><img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td>
 		    Given  I log in as a &quot;full_access_user&quot;
 
 		  </td>
 		</tr>
 		<tr>
-		  <td><img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td>
 		    Given  I acquire information about my workspace
 
 		  </td>
 		</tr>
 		<tr>
-		  <td><img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td>
 		    Given  I am on the facebook compose page using its designated workspace
 
@@ -166,35 +140,947 @@ features/gui/publish/fb_publish_workflow.feature:7:in `And I add the following a
 	      <br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="failed">Create a simple facebook status post</th>
+		  <th colspan="2" class="passed">Create a simple facebook status post</th>
 		</tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
-		  <td class="skipped_step">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
    
 		  When  I select an available account &quot;Publish Blue&quot;
 
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
-		  <td class="skipped_step">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
    
 		  When  I compose a post with a specific message &quot;Hello There&quot;
 
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
-		  <td class="skipped_step">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
    
 		  When  I click on Publish button
 
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
-		  <td class="skipped_step">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  the user should be on the Calendar page
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Submit a facebook post without a message</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Blue&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I click on Publish button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The user should get a message validation error &quot;A message is required.&quot;
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Submit a facebook post without an account</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose the post with a random message
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I click on Publish button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The user should get an account validation error &quot;An account is required.&quot;
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Submit a facebook post without account and message</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I click on Publish button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The user should get an account validation error &quot;An account is required.&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The user should get a message validation error &quot;A message is required.&quot;
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Create a simple facebook status post with label</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Blue&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose the post with a random message
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select a label &quot;label1&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I click on Publish button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  the user should be on the Calendar page
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Create a simple facebook status post with a new label</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Blue&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose the post with a random message
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  Create a new label
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I click on Publish button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  the user should be on the Calendar page
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Create a schedule facebook status post</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Blue&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose the post with a random message
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  My publish date is current date plus 2 days in future
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  My publish time is &quot;04:35 PM&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I click on Publish button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  the user should be on the Calendar page
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Attempt a past scheduled date for a facebook post</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Blue&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose the post with a random message
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  My publish date is current date minus 2 days in past
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I click on Publish button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The user should get a scheduling validation error &quot;The selected date is in the past.&quot;
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Create a scheduled facebook link status post with a new label</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Blue&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose a post with a specific message &quot;salesforce.com post with link url&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  Create a new label
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  My publish date is current date plus 2 days in future
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  My publish time is &quot;04:35 PM&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get the scrapped url beneath the compose box
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The preview should have scrapped link
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get a preview of the facebook status post
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I click on Publish button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  the user should be on the Calendar page
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Create a scheduled facebook image status post with a new label</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Blue&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose the post with a random message
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I add the following image to the post &quot;small.jpg&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  Create a new label
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  My publish date is current date plus 2 days in future
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  My publish time is &quot;04:35 PM&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The FB preview should have uploaded image
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get a preview of the facebook status post
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I click on Publish button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  the user should be on the Calendar page
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Create a simple facebook status post having multiple labels and multiple network assets</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Blue&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Green&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose the post with a random message
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select a label &quot;label1&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select a label &quot;label2&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  Create a new label
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  Create a new label
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get a preview of the facebook status post
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I click on Publish button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  the user should be on the Calendar page
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Create a scheduled facebook status post having multiple labels and multiple network assets</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Blue&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Green&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose the post with a random message
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select a label &quot;label1&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select a label &quot;label2&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  My publish date is current date plus 2 days in future
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  My publish time is &quot;04:35 PM&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get a preview of the facebook status post
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I click on Publish button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  the user should be on the Calendar page
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Create a facebook status post with link having multiple labels and multiple network assets</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Blue&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Green&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select a label &quot;label2&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose a post with a specific message &quot;salesforce.com post with link url&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get the scrapped url beneath the compose box
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The preview should have scrapped link
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get a preview of the facebook status post
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I click on Publish button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  the user should be on the Calendar page
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Create a facebook status post with image having multiple labels and multiple network assets</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Blue&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Green&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select a label &quot;label1&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose the post with a random message
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I add the following image to the post &quot;small.jpg&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The FB preview should have uploaded image
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get a preview of the facebook status post
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I click on Publish button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  the user should be on the Calendar page
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Create a scheduled facebook status post with link having multiple labels and multiple network assets</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Blue&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Green&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select a label &quot;label1&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select a label &quot;label2&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  My publish date is current date plus 2 days in future
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  My publish time is &quot;04:35 PM&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose a post with a specific message &quot;salesforce.com post with link url&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get the scrapped url beneath the compose box
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The preview should have scrapped link
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get a preview of the facebook status post
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I click on Publish button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
    
 		  Then  the user should be on the Calendar page
 

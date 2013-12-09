@@ -27,8 +27,8 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Tuesday November 26, 2013 at 12:35:22</td>
-            <td>0m26.039s</td>
+            <td>Monday December 9, 2013 at 15:24:50</td>
+            <td>4m13.104s</td>
           </tr>
         </table>  
       </div>
@@ -49,23 +49,23 @@
 
         <tr class="summary_row_header">
           <td>Scenarios</td>
-          <td>1</td>
-          <td>1 <span class="percentage">(100.0%)</span></td>
+          <td>5</td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>5 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m14.747s</td>
+          <td>0m47.465s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
-          <td>4</td>
-          <td>4 <span class="percentage">(100.0%)</span></td>
+          <td>22</td>
+          <td>13 <span class="percentage">(59.1%)</span></td>
+          <td>5 <span class="percentage">(22.7%)</span></td>
+          <td>4 <span class="percentage">(18.2%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m2.386s</td>
+          <td>0m6.465s</td>
         </tr>
 
 
@@ -136,7 +136,63 @@
 	      <br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">Compose a draft to an account without a message</th>
+		  <th colspan="2" class="failed">Compose an empty draft without an account</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I click on Save button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  the Save button should be disabled
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="">
+   
+		  Then  I should see the Draft saved confirmation on the page
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>expected #&lt;PageObject::Platforms::SeleniumWebDriver::SurrogateSeleniumElement:0x007f82fbbbff78 @identifier={:id=&gt;&quot;open-draft-link&quot;}, @type=PageObject::Elements::Link, @tag=&quot;a&quot;, @other=nil, @platform=#&lt;PageObject::Platforms::SeleniumWebDriver::PageObject:0x007f82fbb756d0 @browser=#&lt;Selenium::WebDriver::Driver:0x128f710e6fab5330 browser=:chrome&gt;&gt;, @element=nil&gt; to exist (RSpec::Expectations::ExpectationNotMetError)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./features/step_definitions/gui/publish/draft_workflow_steps.rb
+</strong><code><span class="linenum">8</span>
+<span class="linenum">9</span><span class="constant">Then</span><span class="punct">(/</span><span class="regex">^I should see the Draft saved confirmation on the page$</span><span class="punct">/)</span> <span class="keyword">do</span>
+<span class="offending"><span class="linenum">10</span>  <span class="ident">on</span><span class="punct">(</span><span class="constant">ComposePage</span><span class="punct">).</span><span class="ident">draft_saved_element</span><span class="punct">.</span><span class="ident">should</span> <span class="ident">exist</span></span>
+<span class="linenum">11</span><span class="keyword">end</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./features/step_definitions/gui/publish/draft_workflow_steps.rb:10:in `/^I should see the Draft saved confirmation on the page$/&#39;
+features/gui/publish/fb_draft_workflow.feature:19:in `And I should see the Draft saved confirmation on the page&#39;</pre>
+			</td>
+		</tr>
+	</table>
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_4'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_4' style='display: none' src='../../images/error-2013-12-09 15:25:26 -0500.png'/>
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="failed">Compose a draft to an account without a message</th>
 		</tr>
 		  <tr class="borderSeparator">
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
@@ -163,16 +219,258 @@
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
 		  <td class="">
    
 		  Then  I should see the Draft saved confirmation on the page
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>expected #&lt;PageObject::Platforms::SeleniumWebDriver::SurrogateSeleniumElement:0x007f82fd050730 @identifier={:id=&gt;&quot;open-draft-link&quot;}, @type=PageObject::Elements::Link, @tag=&quot;a&quot;, @other=nil, @platform=#&lt;PageObject::Platforms::SeleniumWebDriver::PageObject:0x007f82fd03ac78 @browser=#&lt;Selenium::WebDriver::Driver:0x..f8b1b53fa9c8d3458 browser=:chrome&gt;&gt;, @element=nil&gt; to exist (RSpec::Expectations::ExpectationNotMetError)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./features/step_definitions/gui/publish/draft_workflow_steps.rb
+</strong><code><span class="linenum">8</span>
+<span class="linenum">9</span><span class="constant">Then</span><span class="punct">(/</span><span class="regex">^I should see the Draft saved confirmation on the page$</span><span class="punct">/)</span> <span class="keyword">do</span>
+<span class="offending"><span class="linenum">10</span>  <span class="ident">on</span><span class="punct">(</span><span class="constant">ComposePage</span><span class="punct">).</span><span class="ident">draft_saved_element</span><span class="punct">.</span><span class="ident">should</span> <span class="ident">exist</span></span>
+<span class="linenum">11</span><span class="keyword">end</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./features/step_definitions/gui/publish/draft_workflow_steps.rb:10:in `/^I should see the Draft saved confirmation on the page$/&#39;
+features/gui/publish/fb_draft_workflow.feature:26:in `And I should see the Draft saved confirmation on the page&#39;</pre>
+			</td>
+		</tr>
+	</table>
 
 		  </td>
 		  </tr>
 	      </table>
 	    
         <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_5'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_5' style='display: none' src='../../images/error-2013-12-09 15:26:18 -0500.png'/>
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="failed">Compose a draft with a random message</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Blue&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose the post with a random message
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I click on Save button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  the Save button should be disabled
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="">
+   
+		  Then  I should see the Draft saved confirmation on the page
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>expected #&lt;PageObject::Platforms::SeleniumWebDriver::SurrogateSeleniumElement:0x007f82fd1c3b80 @identifier={:id=&gt;&quot;open-draft-link&quot;}, @type=PageObject::Elements::Link, @tag=&quot;a&quot;, @other=nil, @platform=#&lt;PageObject::Platforms::SeleniumWebDriver::PageObject:0x007f82fd1aa068 @browser=#&lt;Selenium::WebDriver::Driver:0x..f8dca3c7d60a90c0 browser=:chrome&gt;&gt;, @element=nil&gt; to exist (RSpec::Expectations::ExpectationNotMetError)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./features/step_definitions/gui/publish/draft_workflow_steps.rb
+</strong><code><span class="linenum">8</span>
+<span class="linenum">9</span><span class="constant">Then</span><span class="punct">(/</span><span class="regex">^I should see the Draft saved confirmation on the page$</span><span class="punct">/)</span> <span class="keyword">do</span>
+<span class="offending"><span class="linenum">10</span>  <span class="ident">on</span><span class="punct">(</span><span class="constant">ComposePage</span><span class="punct">).</span><span class="ident">draft_saved_element</span><span class="punct">.</span><span class="ident">should</span> <span class="ident">exist</span></span>
+<span class="linenum">11</span><span class="keyword">end</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./features/step_definitions/gui/publish/draft_workflow_steps.rb:10:in `/^I should see the Draft saved confirmation on the page$/&#39;
+features/gui/publish/fb_draft_workflow.feature:33:in `And I should see the Draft saved confirmation on the page&#39;</pre>
+			</td>
+		</tr>
+	</table>
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_6'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_6' style='display: none' src='../../images/error-2013-12-09 15:27:11 -0500.png'/>
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="failed">Compose a draft with cross site script (XSS)</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Blue&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose a post with a specific message &quot;&lt;script&gt;alert(1)&lt;/script&gt;&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I click on Save button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  There should not be any JavaScript alert
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="">
+   
+		  Then  I should see the Draft saved confirmation on the page
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>expected #&lt;PageObject::Platforms::SeleniumWebDriver::SurrogateSeleniumElement:0x007f82fd31b028 @identifier={:id=&gt;&quot;open-draft-link&quot;}, @type=PageObject::Elements::Link, @tag=&quot;a&quot;, @other=nil, @platform=#&lt;PageObject::Platforms::SeleniumWebDriver::PageObject:0x007f82fd30b178 @browser=#&lt;Selenium::WebDriver::Driver:0x720b3847746a5590 browser=:chrome&gt;&gt;, @element=nil&gt; to exist (RSpec::Expectations::ExpectationNotMetError)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./features/step_definitions/gui/publish/draft_workflow_steps.rb
+</strong><code><span class="linenum">8</span>
+<span class="linenum">9</span><span class="constant">Then</span><span class="punct">(/</span><span class="regex">^I should see the Draft saved confirmation on the page$</span><span class="punct">/)</span> <span class="keyword">do</span>
+<span class="offending"><span class="linenum">10</span>  <span class="ident">on</span><span class="punct">(</span><span class="constant">ComposePage</span><span class="punct">).</span><span class="ident">draft_saved_element</span><span class="punct">.</span><span class="ident">should</span> <span class="ident">exist</span></span>
+<span class="linenum">11</span><span class="keyword">end</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./features/step_definitions/gui/publish/draft_workflow_steps.rb:10:in `/^I should see the Draft saved confirmation on the page$/&#39;
+features/gui/publish/fb_draft_workflow.feature:40:in `And I should see the Draft saved confirmation on the page&#39;</pre>
+			</td>
+		</tr>
+	</table>
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_7'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_7' style='display: none' src='../../images/error-2013-12-09 15:28:05 -0500.png'/>
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="failed">Create a simple status post draft and then publish it</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="">
+   
+		  Given  I create a simple status draft using &quot;Publish Blue&quot;
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>Element not visible in 4 seconds (Selenium::WebDriver::Error::TimeOutError)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./features/step_definitions/gui/publish/draft_workflow_steps.rb
+</strong><code><span class="linenum">25</span>    <span class="attribute">@composed_msg</span> <span class="punct">=</span> <span class="ident">page</span><span class="punct">.</span><span class="ident">composed_message</span>
+<span class="linenum">26</span>    <span class="ident">page</span><span class="punct">.</span><span class="ident">save_button</span>
+<span class="offending"><span class="linenum">27</span>    <span class="ident">page</span><span class="punct">.</span><span class="ident">draft_saved_element</span><span class="punct">.</span><span class="ident">when_visible</span><span class="punct">(</span><span class="ident">timeout</span><span class="punct">=</span><span class="number">4</span><span class="punct">)</span></span>
+<span class="linenum">28</span>  <span class="keyword">end</span>
+<span class="linenum">29</span><span class="keyword">end</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./features/step_definitions/gui/publish/draft_workflow_steps.rb:27:in `block (2 levels) in &lt;top (required)&gt;&#39;
+./features/step_definitions/gui/publish/draft_workflow_steps.rb:22:in `/^I create a simple status draft using &quot;([^&quot;]*)&quot;$/&#39;
+features/gui/publish/fb_draft_workflow.feature:43:in `Given I create a simple status draft using &quot;Publish Blue&quot;&#39;</pre>
+			</td>
+		</tr>
+	</table>
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  When  I navigate to my draft list
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  I can open my &quot;Facebook&quot; draft
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  When  I click on Publish button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  the user should be on the Calendar page
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_8'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_8' style='display: none' src='../../images/error-2013-12-09 15:28:58 -0500.png'/>
 	        <br /><br />
 	      </div>
       </div>

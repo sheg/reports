@@ -27,8 +27,8 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Tuesday November 26, 2013 at 12:39:04</td>
-            <td>0m46.893s</td>
+            <td>Monday December 9, 2013 at 16:20:51</td>
+            <td>6m22.949s</td>
           </tr>
         </table>  
           <pre class="description run_stats">Story<br/>As a user
@@ -51,23 +51,23 @@ I should be able to create a new workspace and able to see my workspace in works
 
         <tr class="summary_row_header">
           <td>Scenarios</td>
-          <td>2</td>
-          <td>2 <span class="percentage">(100.0%)</span></td>
+          <td>17</td>
+          <td>15 <span class="percentage">(88.2%)</span></td>
+          <td>2 <span class="percentage">(11.8%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m23.446s</td>
+          <td>0m22.526s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
-          <td>7</td>
-          <td>7 <span class="percentage">(100.0%)</span></td>
+          <td>59</td>
+          <td>57 <span class="percentage">(96.6%)</span></td>
+          <td>2 <span class="percentage">(3.4%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m4.171s</td>
+          <td>0m15.691s</td>
         </tr>
 
 
@@ -115,6 +115,470 @@ I should be able to create a new workspace and able to see my workspace in works
 	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
+		  <th colspan="2" class="passed">should not be able to create a workspace with blank name</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I am on the workspaces index page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I create a new workspace with a blank name
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get error &quot;This field is required&quot;
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">should not be able to create a duplicate workspace</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  the client adds a workspace using POST
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I am on the workspaces index page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I create a new workspace with that existing name
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get error &quot;The workspace name is already taken&quot;
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">user should get the create workspace page if he is not part of any workspaces</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  the &quot;ws_readonly_user&quot; user has no workspaces
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I log in as a &quot;ws_readonly_user&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I am on the workspaces index page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I will be redirected to create workspace page
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">user should be able to see all the workspaces he belongs to</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  the &quot;ws_readonly_user&quot; user has no workspaces
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  &quot;ws_readonly_user&quot; is added to multiple workspaces via API
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I log in as a &quot;ws_readonly_user&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I am on the workspaces index page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see the workspaces I belong to
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">user should be redirected to workspace landing page on clicking cancel button on Add basic information page</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I am on on add basic information page of workspace creation wizard
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I click on cancel button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I will be navigated to workspace landing page
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">user should get &quot;No Results Found&quot; message while searching for a incorrect workspace</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I am on the workspaces index page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I will search for a non existing workspace
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see &quot;No Results Found&quot; message
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">user should get duplicate workspace error message in summary page if it was already added by another user</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I am on workspace summary page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  The same workspace was created via API
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I click on finish button in workspace summary page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get the error message &quot;Another workspace has been created with this name, and workspace names must be unique. Please adjust the name and try again&quot;
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">user should not be able to create a workspace with duplicate name and Trailing spaces</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  the client adds a workspace using POST
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I am on the workspaces index page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I create a new workspace with that existing name with trailing spaces
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get error &quot;The workspace name is already taken&quot;
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="failed">user should get correct information in workspace summary page when no social accounts or users are added to the workspace</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I am on workspace summary page with no social accounts or users are added to the workspace
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="">
+   
+		  Then  I should see the user count as &quot;1&quot; and social account count as &quot;0&quot; in workspace summary page
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>no such element
+  (Session info: chrome=31.0.1650.63)
+  (Driver info: chromedriver=2.2,platform=Mac OS X 10.8.5 x86_64) (Selenium::WebDriver::Error::NoSuchElementError)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./features/step_definitions/gui/workspaces/workspace_wizard_steps.rb
+</strong><code><span class="linenum">242</span><span class="constant">Then</span><span class="punct">(/</span><span class="regex">^I should see the user count as &quot;([^&quot;]*)&quot; and social account count as &quot;([^&quot;]*)&quot; in workspace summary page$</span><span class="punct">/)</span> <span class="keyword">do</span> <span class="punct">|</span><span class="ident">user_count</span><span class="punct">,</span> <span class="ident">social_account_count</span><span class="punct">|</span>
+<span class="linenum">243</span>  <span class="ident">on</span><span class="punct">(</span><span class="constant">SummaryPage</span><span class="punct">)</span> <span class="keyword">do</span> <span class="punct">|</span><span class="ident">page</span><span class="punct">|</span>
+<span class="offending"><span class="linenum">244</span>    <span class="ident">page</span><span class="punct">.</span><span class="ident">users_count</span><span class="punct">.</span><span class="ident">should</span> <span class="ident">eq</span><span class="punct">(</span><span class="ident">user_count</span><span class="punct">)</span></span>
+<span class="linenum">245</span>    <span class="ident">page</span><span class="punct">.</span><span class="ident">social_accounts_count</span><span class="punct">.</span><span class="ident">should</span> <span class="ident">eq</span><span class="punct">(</span><span class="ident">social_account_count</span><span class="punct">)</span>
+<span class="linenum">246</span>  <span class="keyword">end</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./features/step_definitions/gui/workspaces/workspace_wizard_steps.rb:244:in `block (2 levels) in &lt;top (required)&gt;&#39;
+./features/step_definitions/gui/workspaces/workspace_wizard_steps.rb:243:in `/^I should see the user count as &quot;([^&quot;]*)&quot; and social account count as &quot;([^&quot;]*)&quot; in workspace summary page$/&#39;
+features/gui/workspaces/workspace_wizard.feature:60:in `Then I should see the user count as &quot;1&quot; and social account count as &quot;0&quot; in workspace summary page&#39;</pre>
+			</td>
+		</tr>
+	</table>
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_15'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_15' style='display: none' src='../../images/error-2013-12-09 16:23:09 -0500.png'/>
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">user should get correct information in workspace index page even when workspace was created with no social accounts or users</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I am on the workspaces index page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I create a new workspace with no social accounts or users
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I search for that workspace in workspace index page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see the user count as &quot;1&quot; and social account count as &quot;0&quot; in workspace index page
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="failed">user should get correct information in workspace summary page when multiple users and social accounts are added to a workspace</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I am on the workspaces index page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I have added &quot;3&quot; social accounts and &quot;3&quot; users to the new workspace
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I navigate to workspace summary page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="">
+   
+		  Then  I should see the user count as &quot;4&quot; and social account count as &quot;3&quot; in workspace summary page
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>no such element
+  (Session info: chrome=31.0.1650.63)
+  (Driver info: chromedriver=2.2,platform=Mac OS X 10.8.5 x86_64) (Selenium::WebDriver::Error::NoSuchElementError)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./features/step_definitions/gui/workspaces/workspace_wizard_steps.rb
+</strong><code><span class="linenum">242</span><span class="constant">Then</span><span class="punct">(/</span><span class="regex">^I should see the user count as &quot;([^&quot;]*)&quot; and social account count as &quot;([^&quot;]*)&quot; in workspace summary page$</span><span class="punct">/)</span> <span class="keyword">do</span> <span class="punct">|</span><span class="ident">user_count</span><span class="punct">,</span> <span class="ident">social_account_count</span><span class="punct">|</span>
+<span class="linenum">243</span>  <span class="ident">on</span><span class="punct">(</span><span class="constant">SummaryPage</span><span class="punct">)</span> <span class="keyword">do</span> <span class="punct">|</span><span class="ident">page</span><span class="punct">|</span>
+<span class="offending"><span class="linenum">244</span>    <span class="ident">page</span><span class="punct">.</span><span class="ident">users_count</span><span class="punct">.</span><span class="ident">should</span> <span class="ident">eq</span><span class="punct">(</span><span class="ident">user_count</span><span class="punct">)</span></span>
+<span class="linenum">245</span>    <span class="ident">page</span><span class="punct">.</span><span class="ident">social_accounts_count</span><span class="punct">.</span><span class="ident">should</span> <span class="ident">eq</span><span class="punct">(</span><span class="ident">social_account_count</span><span class="punct">)</span>
+<span class="linenum">246</span>  <span class="keyword">end</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./features/step_definitions/gui/workspaces/workspace_wizard_steps.rb:244:in `block (2 levels) in &lt;top (required)&gt;&#39;
+./features/step_definitions/gui/workspaces/workspace_wizard_steps.rb:243:in `/^I should see the user count as &quot;([^&quot;]*)&quot; and social account count as &quot;([^&quot;]*)&quot; in workspace summary page$/&#39;
+features/gui/workspaces/workspace_wizard.feature:72:in `Then I should see the user count as &quot;4&quot; and social account count as &quot;3&quot; in workspace summary page&#39;</pre>
+			</td>
+		</tr>
+	</table>
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_16'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_16' style='display: none' src='../../images/error-2013-12-09 16:23:54 -0500.png'/>
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
 		  <th colspan="2" class="passed">user should be able to add multiple users and social accounts to a new workspace</th>
 		</tr>
 		  <tr class="borderSeparator">
@@ -146,6 +610,134 @@ I should be able to create a new workspace and able to see my workspace in works
 		  <td class="">
    
 		  Then  I should see the user count as &quot;4&quot; and social account count as &quot;3&quot; in workspace index page
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">user should be able to create a workspace with multiple network</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I am on the workspaces index page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I create a new workspace with multiple networks
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should be able to access the workspace
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">: user with different role should be able to access the workspace</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I am on add workspace members page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I add &quot;ws_full_user, ws_permissions_user and ws_readonly_user&quot; users with &quot;Admin&quot; role to the workspace
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  &quot;ws_full_user, ws_permissions_user and ws_readonly_user&quot; users should be able to access the workspace
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">: user with different role should be able to access the workspace</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I am on add workspace members page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I add &quot;ws_full_user, ws_permissions_user and ws_readonly_user&quot; users with &quot;Contributor&quot; role to the workspace
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  &quot;ws_full_user, ws_permissions_user and ws_readonly_user&quot; users should be able to access the workspace
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">: user with different role should be able to access the workspace</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I am on add workspace members page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I add &quot;ws_full_user, ws_permissions_user and ws_readonly_user&quot; users with &quot;Viewer&quot; role to the workspace
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  &quot;ws_full_user, ws_permissions_user and ws_readonly_user&quot; users should be able to access the workspace
 
 		  </td>
 		  </tr>

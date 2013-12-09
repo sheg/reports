@@ -27,8 +27,8 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Tuesday November 26, 2013 at 12:34:35</td>
-            <td>0m46.897s</td>
+            <td>Monday December 9, 2013 at 15:18:41</td>
+            <td>6m8.888s</td>
           </tr>
         </table>  
           <pre class="description run_stats">Story<br/>As a contributor user I want to verify the options available on Facebook compose UI</pre>
@@ -50,23 +50,23 @@
 
         <tr class="summary_row_header">
           <td>Scenarios</td>
-          <td>2</td>
-          <td>2 <span class="percentage">(100.0%)</span></td>
+          <td>14</td>
+          <td>14 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m17.020s</td>
+          <td>0m25.197s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
-          <td>6</td>
-          <td>6 <span class="percentage">(100.0%)</span></td>
+          <td>51</td>
+          <td>51 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m1.857s</td>
+          <td>0m27.052s</td>
         </tr>
 
 
@@ -137,6 +137,62 @@
 	      <br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
+		  <th colspan="2" class="passed">Assert default UI elements</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see &quot;Facebook Post&quot; title
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see the defaults elements present on the facebook compose page
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Select a social account using account picker</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Blue&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  &quot;Publish Blue&quot; should be selected and displayed on left rail
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  Save button should be enabled
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
 		  <th colspan="2" class="passed">Message preview should appear for a status post</th>
 		</tr>
 		  <tr class="borderSeparator">
@@ -152,6 +208,334 @@
 		  <td class="">
    
 		  Then  I should get a preview of the facebook status post
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">For FB schedule the default publish date and time is always one hour in future</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I know the user TIME ZONE
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I am on the facebook compose page using its designated workspace
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose the post with a random message
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I select an available account &quot;Publish Blue&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I click on Publish Date option
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  By default the publish date and time should be one hour in future
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The Publish Now button should change to Publish on one hour in future
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Facebook compose text box should scrape and preview a link</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose a post with a specific message &quot;https://www.salesforce.com &quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get the scrapped url beneath the compose box
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get a preview of the facebook status post
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The preview should have scrapped link
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Facebook compose text box should scrape and preview a link</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose a post with a specific message &quot;http://www.salesforce.com &quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get the scrapped url beneath the compose box
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get a preview of the facebook status post
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The preview should have scrapped link
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Facebook compose text box should scrape and preview a link</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose a post with a specific message &quot;www.salesforce.com &quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get the scrapped url beneath the compose box
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get a preview of the facebook status post
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The preview should have scrapped link
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Facebook compose text box should scrape and preview a link</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose a post with a specific message &quot;salesforce.com &quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get the scrapped url beneath the compose box
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get a preview of the facebook status post
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The preview should have scrapped link
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Facebook compose text box should scrape and preview a link</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose a post with a specific message &quot;www.salesforce.com/?home &quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get the scrapped url beneath the compose box
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get a preview of the facebook status post
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The preview should have scrapped link
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Add a script tag into FB message text area containing an alert</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose a post with a specific message &quot;&lt;script language=&quot;JavaScript&quot;&gt; alert(&#39;test&#39;); &lt;/script&gt;&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  There should not be any JavaScript alert
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get a preview of the facebook status post
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">In FB post attach a virus file</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose the post with a random message
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I add the following image to the post &quot;virus_image.png&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get a virus alert
 
 		  </td>
 		  </tr>
@@ -192,6 +576,78 @@
 		  <td class="">
    
 		  Then  I should get a preview of the facebook status post
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">In FB post attach a large sized image - approximately 5 mb</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose the post with a random message
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I add the following image to the post &quot;almost_five.jpg&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The FB preview should have uploaded image
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get a preview of the facebook status post
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">In FB post attach a file having size greater than 5 mb</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I compose the post with a random message
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I add the following image to the post &quot;large.jpg&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should get a upload file size exceed alert
 
 		  </td>
 		  </tr>

@@ -27,8 +27,8 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Tuesday November 26, 2013 at 12:33:16</td>
-            <td>0m27.580s</td>
+            <td>Monday December 9, 2013 at 14:59:14</td>
+            <td>1m26.399s</td>
           </tr>
         </table>  
           <pre class="description run_stats">Story<br/>As a content marketing user, I should be able to view my post on calendar day view
@@ -51,23 +51,23 @@ Note - Celery and Publish daemon should be working on Dev, Stage and Prod</pre>
 
         <tr class="summary_row_header">
           <td>Scenarios</td>
-          <td>1</td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>1 <span class="percentage">(100.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>2</td>
+          <td>2 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m13.365s</td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0m30.523s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
-          <td>6</td>
-          <td>5 <span class="percentage">(83.3%)</span></td>
-          <td>1 <span class="percentage">(16.7%)</span></td>
+          <td>12</td>
+          <td>12 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m1.340s</td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0m1.776s</td>
         </tr>
 
 
@@ -134,7 +134,7 @@ Note - Celery and Publish daemon should be working on Dev, Stage and Prod</pre>
 	      <br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="failed">Twitter post created should be displayed on calendar day view</th>
+		  <th colspan="2" class="passed">Twitter post created should be displayed on calendar day view</th>
 		</tr>
 		  <tr class="borderSeparator">
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
@@ -177,41 +177,72 @@ Note - Celery and Publish daemon should be working on Dev, Stage and Prod</pre>
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
 		  When  twitter post message should be part of post descriptions in the day view
-	<table>
-		<tr class="error">
-			<td class="message">
-				<strong><pre>expected [&quot;Super cool Cukes Team&quot;, &quot;3 target + 1 lable twitter post + image&quot;] to include &quot;non voluptates perspiciatis&quot; (RSpec::Expectations::ExpectationNotMetError)</pre></strong>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<pre class="ruby"><strong>./features/step_definitions/calendar/web_cal_pub_day_view.rb
-</strong><code><span class="linenum">31</span>
-<span class="linenum">32</span><span class="constant">When</span><span class="punct">(/</span><span class="regex">^twitter post message should be part of post descriptions in the day view$</span><span class="punct">/)</span> <span class="keyword">do</span>
-<span class="offending"><span class="linenum">33</span>  <span class="attribute">@all_posts_descriptions</span><span class="punct">.</span><span class="ident">should</span> <span class="ident">include</span> <span class="attribute">@twitter_post_message</span></span>
-<span class="linenum">34</span>  <span class="attribute">@index</span> <span class="punct">=</span> <span class="attribute">@all_posts_descriptions</span><span class="punct">.</span><span class="ident">rindex</span><span class="punct">(</span><span class="attribute">@twitter_post_message</span><span class="punct">)</span>
-<span class="linenum">35</span><span class="keyword">end</span></code></pre>
-			</td>
-		</tr>
-		<tr >
-			<td class="detail">
-					<pre>./features/step_definitions/calendar/web_cal_pub_day_view.rb:33:in `/^twitter post message should be part of post descriptions in the day view$/&#39;
-features/gui/calendar/cal_day_view_twitter_post.feature:22:in `And twitter post message should be part of post descriptions in the day view&#39;</pre>
-			</td>
-		</tr>
-	</table>
 
 		  </td>
 		  </tr>
 	      </table>
 	    
         <div class="img_container">
-		        <a href='' onclick="img=document.getElementById('img_1'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
-		        <img id='img_1' style='display: none' src='../../images/error-2013-11-26 12:33:38 -0500.png'/>
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Create a twitter post to multiple targets should be displayed on calendar day view</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I create a new twitter post via api to multiple targets
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  the twitter post should successfully be created
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  get the twitter post message from the post response object
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  get all the post in the day view
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  get all the post descriptions in the day view
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  twitter post message should be part of post descriptions in the day view
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
 	        <br /><br />
 	      </div>
       </div>

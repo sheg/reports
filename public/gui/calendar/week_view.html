@@ -27,8 +27,8 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Tuesday November 26, 2013 at 12:34:11</td>
-            <td>0m14.279s</td>
+            <td>Monday December 9, 2013 at 15:13:50</td>
+            <td>2m28.516s</td>
           </tr>
         </table>  
           <pre class="description run_stats">Story<br/>As a content marketing user, I should be able to view my calendar in week view</pre>
@@ -50,23 +50,23 @@
 
         <tr class="summary_row_header">
           <td>Scenarios</td>
-          <td>1</td>
-          <td>1 <span class="percentage">(100.0%)</span></td>
+          <td>7</td>
+          <td>7 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m6.046s</td>
+          <td>0m19.136s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
-          <td>2</td>
-          <td>2 <span class="percentage">(100.0%)</span></td>
+          <td>23</td>
+          <td>23 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m0.421s</td>
+          <td>0m0.148s</td>
         </tr>
 
 
@@ -102,6 +102,13 @@
 		<tr>
 		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td>
+		    Given  I acquire information about my workspace
+
+		  </td>
+		</tr>
+		<tr>
+		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td>
 		    Given  I am on the calendar page using its designated workspace
 
 		  </td>
@@ -110,6 +117,22 @@
 	      <br />
 	      <h2 class="scenarios">Scenarios:</h2>
 	      <br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Verify that week view is displayed</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  verify that we are on week view
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
 		  <th colspan="2" class="passed">User should paginate to next week</th>
@@ -127,6 +150,206 @@
 		  <td class="">
    
 		  Then  verify we are not in current week view
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">User should paginate to previous week</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I am able to paginate to prev week
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  verify we are not in current week view
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">User should be able to switch back to today&#39;s week after paginating to next week</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I am able to paginate to next week
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  verify we are not in current week view
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  switch back to today&#39;s week view
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  verify that we are on week view
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">User should be able to switch back to today&#39;s week after paginating to previous week</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I am able to paginate to prev week
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  verify we are not in current week view
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  switch back to today&#39;s week view
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  verify that we are on week view
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">User should be able to switch from week to day view</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  verify that we are on week view
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I am able to switch from week to day view
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  verify that we are on day view
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I am able to switch from day to week view
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  verify that we are on week view
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">User should be able to switch from week to month view</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  verify that we are on week view
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I am able to switch from week to month view
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  verify that we are on month view
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I am able to switch from month to week view
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  verify that we are on week view
 
 		  </td>
 		  </tr>

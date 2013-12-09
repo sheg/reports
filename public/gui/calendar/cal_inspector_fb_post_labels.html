@@ -27,8 +27,8 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Monday November 25, 2013 at 17:12:45</td>
-            <td>0m52.963s</td>
+            <td>Monday December 9, 2013 at 15:04:25</td>
+            <td>0m47.298s</td>
           </tr>
         </table>  
           <pre class="description run_stats">Story<br/>As a content marketing user, I should be able to view my post on calendar inspector
@@ -52,22 +52,22 @@ Note - Celery and Publish daemon should be working on Dev, Stage and Prod</pre>
         <tr class="summary_row_header">
           <td>Scenarios</td>
           <td>1</td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
           <td>1 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m36.688s</td>
+          <td>0m29.051s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
           <td>11</td>
-          <td>11 <span class="percentage">(100.0%)</span></td>
+          <td>4 <span class="percentage">(36.4%)</span></td>
+          <td>1 <span class="percentage">(9.1%)</span></td>
+          <td>6 <span class="percentage">(54.5%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m2.862s</td>
+          <td>0m2.156s</td>
         </tr>
 
 
@@ -127,7 +127,7 @@ Note - Celery and Publish daemon should be working on Dev, Stage and Prod</pre>
 	      <br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">Calendar Inspector Label should match post message with single label</th>
+		  <th colspan="2" class="failed">Calendar Inspector Label should match post message with single label</th>
 		</tr>
 		  <tr class="borderSeparator">
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
@@ -162,56 +162,79 @@ Note - Celery and Publish daemon should be working on Dev, Stage and Prod</pre>
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
 		  <td class="">
    
 		  Then  the last existing facebook post should have the label name and id
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>undefined method `label_id&#39; for #&lt;PublishLabel:0x007f82fd338470&gt; (NoMethodError)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./features/step_definitions/api/publish/publish_facebook.rb
+</strong><code><span class="linenum">81</span>  <span class="ident">label_id</span> <span class="punct">=</span> <span class="ident">publish_label</span><span class="punct">.</span><span class="ident">get_label_id</span>
+<span class="linenum">82</span>  <span class="ident">facebook_post_label_attributes</span> <span class="punct">=</span> <span class="ident">publish_facebook</span><span class="punct">.</span><span class="ident">get_facebook_label_attributes</span><span class="punct">(</span><span class="ident">publish_facebook</span><span class="punct">.</span><span class="ident">get_internal_post_id</span><span class="punct">,</span><span class="number">0</span><span class="punct">)</span>
+<span class="offending"><span class="linenum">83</span>  <span class="ident">facebook_post_label_attributes</span><span class="punct">['</span><span class="string">id</span><span class="punct">'].</span><span class="ident">should</span> <span class="ident">eq</span><span class="punct">(</span><span class="ident">publish_label</span><span class="punct">.</span><span class="ident">label_id</span><span class="punct">.</span><span class="ident">to_i</span><span class="punct">)</span></span>
+<span class="linenum">84</span>  <span class="ident">facebook_post_label_attributes</span><span class="punct">['</span><span class="string">name</span><span class="punct">'].</span><span class="ident">should</span> <span class="ident">eq</span><span class="punct">(</span><span class="ident">publish_label</span><span class="punct">.</span><span class="ident">label_name</span><span class="punct">)</span>
+<span class="linenum">85</span><span class="keyword">end</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./features/step_definitions/api/publish/publish_facebook.rb:83:in `/^the last existing facebook post should have the label name and id$/&#39;
+features/gui/calendar/cal_inspector_fb_post_labels.feature:19:in `Then the last existing facebook post should have the label name and id&#39;</pre>
+			</td>
+		</tr>
+	</table>
 
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
    
 		  Then  get the post message from the post response object
 
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
    
 		  When  get all the post in the day view
 
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
    
 		  Then  get all the post descriptions in the day view
 
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
    
 		  Then  post message should be part of post descriptions in the day view
 
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
    
 		  Then  navigate to calendar inspector
 
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
    
 		  Then  label message on calendar inspector should match label name on the post
 
@@ -220,6 +243,8 @@ Note - Celery and Publish daemon should be working on Dev, Stage and Prod</pre>
 	      </table>
 	    
         <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_2'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_2' style='display: none' src='../../images/error-2013-12-09 15:05:07 -0500.png'/>
 	        <br /><br />
 	      </div>
       </div>

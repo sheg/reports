@@ -27,8 +27,8 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Tuesday November 26, 2013 at 12:35:48</td>
-            <td>0m40.331s</td>
+            <td>Monday December 9, 2013 at 15:29:03</td>
+            <td>2m26.914s</td>
           </tr>
         </table>  
           <pre class="description run_stats">Story<br/>As a contributor user I want to verify that the permalink page has required features</pre>
@@ -50,23 +50,23 @@
 
         <tr class="summary_row_header">
           <td>Scenarios</td>
-          <td>1</td>
-          <td>1 <span class="percentage">(100.0%)</span></td>
+          <td>3</td>
+          <td>2 <span class="percentage">(66.7%)</span></td>
+          <td>1 <span class="percentage">(33.3%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m28.538s</td>
+          <td>0m43.876s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
-          <td>3</td>
-          <td>3 <span class="percentage">(100.0%)</span></td>
+          <td>10</td>
+          <td>8 <span class="percentage">(80.0%)</span></td>
+          <td>1 <span class="percentage">(10.0%)</span></td>
+          <td>1 <span class="percentage">(10.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m7.779s</td>
+          <td>0m8.404s</td>
         </tr>
 
 
@@ -160,6 +160,104 @@
 		  <td class="">
    
 		  Then  The permalink page view should be blank
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="failed">User should be allowed to edit a scheduled facebook post</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I create a scheduled facebook post to &quot;Publish Blue&quot; using an api call
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="">
+   
+		  Then  I should be able to edit the post message from the permalink page
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>Element not visible in 20 seconds (Selenium::WebDriver::Error::TimeOutError)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./lib/pages/publish/compose_ui.rb
+</strong><code><span class="linenum">307</span>    <span class="ident">sleep</span> <span class="number">2</span>
+<span class="linenum">308</span>    <span class="comment">#stale element sleep</span>
+<span class="offending"><span class="linenum">309</span>    <span class="ident">draft_saved_element</span><span class="punct">.</span><span class="ident">when_visible</span><span class="punct">(</span><span class="ident">timeout</span> <span class="punct">=</span> <span class="number">20</span><span class="punct">)</span></span>
+<span class="linenum">310</span>  <span class="keyword">end</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./lib/pages/publish/compose_ui.rb:309:in `edit_post_message&#39;
+./features/step_definitions/gui/publish/permalink_steps.rb:31:in `block (2 levels) in &lt;top (required)&gt;&#39;
+./features/step_definitions/gui/publish/permalink_steps.rb:28:in `/^I should be able to edit the post message from the permalink page$/&#39;
+features/gui/publish/fb_permalink.feature:26:in `Then I should be able to edit the post message from the permalink page&#39;</pre>
+			</td>
+		</tr>
+	</table>
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  The facebook edits should be successful
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_9'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_9' style='display: none' src='../../images/error-2013-12-09 15:30:40 -0500.png'/>
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">User should not be allowed to edit a successfully published facebook post</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Given  I create a new Facebook post to &quot;Publish Blue&quot; via api
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  The permalink page should not allow user to take any action on the post
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I navigate directly to the facebook edit page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  User should not be allowed to edit the post
 
 		  </td>
 		  </tr>
